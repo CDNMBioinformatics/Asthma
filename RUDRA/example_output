@@ -1,49 +1,30 @@
-NOTCH3 <-- DLL3
-MAML3:RBPJL <-- NOTCH3 + NOTCH1
-NFKB1:RELA <-- NOTCH3
-IFNGR1 <-- IFNG
-STAT1 <-- IFNGR1
-IL12RB1 <-- IL12A + STAT1 + STAT4 + TBX21 + NFATC1 + NFKB1 + FOS + JUN + GATA3
-STAT4 <-- IL12RB1
-JAK1 <-- IFNGR1 + IL2RA + IL4R
-JAK2 <-- IL12RB1
-TYK2 <-- IL12RB1
-TBX21 <--  [MAML3:RBPJL + STAT1 + STAT4 + NFATC1 + NFKB1 + FOS + JUN] * !GATA3
-IFNG <-- NFKB1:RELA + STAT1 + STAT4 + TBX21 + NFATC1 + NFKB1 + FOS + JUN
-GATA3 <-- TBX21 + NFATC1 + NFKB1 + FOS + JUN + STAT5A + STAT6 + GATA3 + MAML3:RBPJL
-IL4 <-- TBX21 + NFATC1 + NFKB1 + FOS + JUN + STAT5A + STAT6 + GATA3 + MAF + MAML3:RBPJL
-RUNX3 <-- TBX21
-CD247 <-- HLA-DMA
-ZAP70 <-- CD247:CD247 + LCK
-LCK <-- CD4
-LAT <-- ZAP70
-PLCG1 <-- LAT
-D-myo-Inositol 1,4,5-trisphosphate <-- PLCG1
-Diacylglycerol <-- PLCG1
-PRKCQ <-- Diacylglycerol
-PPP3CA <-- Calcium cation
-NFKBIA <-- CHUK + NFKB1
-FOS <-- MAPK1
-JUN <-- MAPK14 + MAPK8
-IL2RA <-- IL2 + NFATC1 + NFKB1 + FOS + JUN + STAT5A + STAT6 + GATA3 + MAF
-IL4R <-- IL4 + NFATC1 + NFKB1 + FOS + JUN + STAT5A + STAT6 + GATA3 + MAF
-STAT5A <-- IL2RA
-STAT6 <-- IL4R
-IL2 <-- NFATC1 + NFKB1 + FOS + JUN + STAT5A + STAT6 + GATA3
-IL5 <-- NFATC1 + NFKB1 + FOS + JUN + GATA3
-IL13 <-- NFATC1 + NFKB1 + FOS + JUN + GATA3
-MAF <-- GATA3
-NOTCH1 <-- JAG1
-CHUK <-- PRKCQ
-NFATC1 <-- !PPP3CA
-CD247:CD247 <-- 1
-Calcium cation <-- 1
-MAPK14 <-- 1
-JAG1 <-- 1
-DLL3 <-- 1
-HLA-DMA <-- 1
-MAPK8 <-- 1
-IL12A <-- 1
-NFKB1 <-- 1
-CD4 <-- 1
-MAPK1 <-- 1
+NR3C2 <-- Aldosterone
+Ang 1-9 <-- Angiotensin I * ACE2
+Angiotensin II <-- Angiotensin I * CMA1 + Angiotensin I * ACE + Angiotensin I * CTSG
+Angiotensin I <-- AGT * REN
+Bradykinin <-- KNG1 * ACE
+NOS3 <-- BDKRB2
+BDKRB2 <-- Bradykinin
+AGTR2 <-- Angiotensin II
+AGTR1 <-- Angiotensin II
+Prostacyclin <-- BDKRB2
+TFs <-- ATP6AP2 + AGTR1 + Ca++
+Ang 1-7 <-- Ang 1-9 + Angiotensin II * ACE2
+TGFB1 <-- TFs
+CYP11B2 <-- TFs
+Aldosterone <-- Deoxycorticosterone * CYP11B2
+ATP6AP2 <-- REN
+EDHF <-- BDKRB2
+MAS1 <-- Ang 1-7
+Ang 1-5 <-- Ang 1-7 * ACE
+BDKRB1 <-- Bradykinin
+ACE <-- !ACE Inhibitor
+Deoxycorticosterone <-- 1
+CTSG <-- 1
+AGT <-- 1
+ACE2 <-- 1
+KNG1 <-- 1
+Ca++ <-- 1
+CMA1 <-- 1
+REN <-- 1
+ACE Inhibitor <-- 1
