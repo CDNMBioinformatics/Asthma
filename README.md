@@ -3,7 +3,7 @@
 ## Overview 
 
 This repository describes the steps needed to reprodcue all the analysis in "Network Dynamics of the Immune System explains Asthma Heterogeneity", Vrushali D. Fangal *et al.*<br/>
-For questions, please contact Vrushali Dipak Fangal - vrf214@g.harvard.edu
+For questions, please contact Vrushali Dipak Fangal - vrushali.fangal@channing.harvard.edu
 
 ## Create conda environment
 ```
